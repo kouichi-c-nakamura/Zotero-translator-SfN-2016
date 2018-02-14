@@ -12,6 +12,10 @@ This translator works for Society for Neuroscience Abstracts from 2016 onwards.
 
 
 
+Although I have made [a Pull Request](https://github.com/zotero/translators/pull/1427) for [Zotero translators](https://github.com/zotero/translators), it's stuck and has not been added to Zotero. I decided to create a separate repo on its own.
+
+
+
 ## Installation 
 
 1. Find and open your Zotero data directory from Preferences > Advanced > Files and Folders > Data  Directory Location > Show Data  Directory.
