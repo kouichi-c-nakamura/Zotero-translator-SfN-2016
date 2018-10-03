@@ -2,14 +2,14 @@
 	"translatorID": "1ed36c21-de68-4ba4-a27f-d724ce258db4",
 	"label": "Society for Neuroscience Abstract 2016",
 	"creator": "Kouchi C. Nakamura, PhD; kouichi.c.nakamura@gmail.com",
-	"target": "^https?://www\\.abstractsonline\\.com/pp8/#!/\\d+/presentation/",
+	"target": "^https?://(www\\.)?abstractsonline\\.com/pp8/#!/(4036|4376|4649)/presentation/",
 	"minVersion": "3.0",
 	"maxVersion": "",
 	"priority": 100,
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2017-09-30 20:41:00"
+	"lastUpdated": "2018-10-03 14:10:07"
 }
 
 /*
@@ -99,8 +99,9 @@ function scrape(doc,url){
 	//TODO does not work for mulitiple
 
 	var m1 = h1color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
-	m1 = m1[0].replace(/\s|\n/g,"");
-	item.pages = m1;
+	if (m1) {
+		item.pages = m1[0].replace(/\s|\n/g,"");
+	}
 
 	//Zotero.debug(item.pages);
 
