@@ -45,6 +45,7 @@ Does not support taking a snapshot for "attachments"
 The dynamically generated HTML of abstractsonline.com does not allow above operations
 
 supported years: four digits after /pp8/ in the url specifies a year
+4649 ... 2018
 4376 ... 2017
 4071 ... 2016
 
