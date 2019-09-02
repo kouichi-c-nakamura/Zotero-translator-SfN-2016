@@ -2,14 +2,14 @@
 	"translatorID": "1ed36c21-de68-4ba4-a27f-d724ce258db4",
 	"label": "Society for Neuroscience Abstract 2016",
 	"creator": "Kouchi C. Nakamura, PhD; kouichi.c.nakamura@gmail.com",
-	"target": "^https?://(www\\.)?abstractsonline\\.com/pp8/#!/(4036|4376|4649)/presentation/",
+	"target": "^https?://(www\\.)?abstractsonline\\.com/pp8/#!/(4036|4376|4649|7883)/presentation/",
 	"minVersion": "3.0",
 	"maxVersion": "",
 	"priority": 100,
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2018-10-03 14:10:07"
+	"lastUpdated": "2019-09-02 18:24:10"
 }
 
 /*
@@ -45,6 +45,8 @@ Does not support taking a snapshot for "attachments"
 The dynamically generated HTML of abstractsonline.com does not allow above operations
 
 supported years: four digits after /pp8/ in the url specifies a year
+
+7883 ... 2019
 4649 ... 2018
 4376 ... 2017
 4071 ... 2016
@@ -92,14 +94,14 @@ function scrape(doc,url){
 	var item = new Zotero.Item("conferencePaper");
 
 	// pages, title
-	var h1color_primary = ZU.xpath(doc,'//h1[@class="color-primary"]');
+	var h2color_primary = ZU.xpath(doc,'//h2[@class="color-primary"]');
 
 	//TODO when multiple doc does not contain the contents
 
-	// Zotero.debug(h1color_primary);
+	//Zotero.debug(h2color_primary);
 	//TODO does not work for mulitiple
 
-	var m1 = h1color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
+	var m1 = h2color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
 	if (m1) {
 		item.pages = m1[0].replace(/\s|\n/g,"");
 	}
@@ -124,8 +126,9 @@ function scrape(doc,url){
 	}
 
 	//Zotero.debug(mst);
-	var session = ZU.xpath(doc,'//h2[@class="session"]/a');
+	var session = ZU.xpath(doc,'//h1[@class="session"]/a');
 
+	Zotero.debug(session);
 	item.extra = "Session: " + session[0].innerText
 		+ "; " + "Session Type: " + mst[1];
 
@@ -183,6 +186,7 @@ function scrape(doc,url){
 }
 
 // All the tests will fail because page contents cannot be loaded. They will issue "TypeError: m2 is n ull"
+
 /** BEGIN TEST CASES **/
 var testCases = [
 	{
