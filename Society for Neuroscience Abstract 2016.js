@@ -2,14 +2,14 @@
 	"translatorID": "1ed36c21-de68-4ba4-a27f-d724ce258db4",
 	"label": "Society for Neuroscience Abstract 2016",
 	"creator": "Kouchi C. Nakamura, PhD; kouichi.c.nakamura@gmail.com",
-	"target": "^https?://(www\.)?abstractsonline\.com/pp8/(index\.html)?#!/(4036|4376|4649|7883)/presentation/",
+	"target": "^https?://(www\\.)?abstractsonline\\.com/pp8/(index\\.html)?#!/(4036|4376|4649|7883)/presentation/",
 	"minVersion": "3.0",
 	"maxVersion": "",
 	"priority": 100,
 	"inRepository": true,
 	"translatorType": 4,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2019-09-02 18:38:58"
+	"lastUpdated": "2019-09-03 15:08:24"
 }
 
 /*
@@ -186,7 +186,3 @@ function scrape(doc,url){
 }
 
 // All the tests will fail because page contents cannot be loaded. They will issue "TypeError: m2 is n ull"
-
-/** BEGIN TEST CASES **/
-var testCases = []
-/** END TEST CASES **/
