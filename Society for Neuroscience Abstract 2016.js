@@ -2,7 +2,7 @@
 	"translatorID": "1ed36c21-de68-4ba4-a27f-d724ce258db4",
 	"label": "Society for Neuroscience Abstract 2016",
 	"creator": "Kouchi C. Nakamura, PhD; kouichi.c.nakamura@gmail.com",
-	"target": "^https?://(www\\.)?abstractsonline\\.com/pp8/#!/(4036|4376|4649|7883)/presentation/",
+	"target": "^https?://(www\.)?abstractsonline\.com/pp8/(index\.html)?#!/(4036|4376|4649|7883)/presentation/",
 	"minVersion": "3.0",
 	"maxVersion": "",
 	"priority": 100,
