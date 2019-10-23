@@ -54,6 +54,9 @@ supported years: four digits after /pp8/ in the url specifies a year
 Ideally "target" should be as below to support "multiple" entries
 ^https?://www\.abstractsonline\.com/pp8/#!/\d+/(presentation|presentations|sessions|participants)/
 
+NOTE: In order to reflect a change in this translator, you need to restart
+the web browser (just reloading page does not update the translator).
+
 If you find a failure or error, please let me know:
 Dr Kouichi C. Nakamura
 kouichi.c.nakamura@gmail.com
@@ -102,10 +105,11 @@ function scrape(doc,url){
 	//TODO does not work for mulitiple
 
 	var m1 = h2color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
-	if (m1) {
-		item.pages = m1[0].replace(/\s|\n/g,"");
+	if (m1 != null ) { // null or array
+	    item.pages = m1[0].replace(/\s|\n/g,"");
+	} else {
+	    item.pages = "null";
 	}
-
 	//Zotero.debug(item.pages);
 
 	var ogtitle = ZU.xpath(doc,'//meta[@property="og:title"]');
