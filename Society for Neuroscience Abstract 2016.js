@@ -104,7 +104,8 @@ function scrape(doc,url){
 	//Zotero.debug(h2color_primary);
 	//TODO does not work for mulitiple
 
-	var m1 = h2color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
+	//var m1 = h2color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
+	var m1 = h2color_primary[0].innerHTML.match(/\d+(\.\d+)*[\.\n\s\d\w\/\-]*(?=\s-\s)/);	
 	if (m1 != null ) { // null or array
 	    item.pages = m1[0].replace(/\s|\n/g,"");
 	}
