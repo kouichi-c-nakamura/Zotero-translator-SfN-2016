@@ -27,6 +27,9 @@ Although I have made [a Pull Request](https://github.com/zotero/translators/pull
 3. Download `Society for Neuroscience Abstract 2016.js` and place it in the `translators` folder.
 4. Restart your Zotero and web browser.
 
+## Note
+
+- If the abstract page is not detected for the translator, try reloading the page a few times and usually it works. 
 
 
 ## Developer
