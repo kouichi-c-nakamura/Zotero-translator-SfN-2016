@@ -107,8 +107,6 @@ function scrape(doc,url){
 	var m1 = h2color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
 	if (m1 != null ) { // null or array
 	    item.pages = m1[0].replace(/\s|\n/g,"");
-	} else {
-	    item.pages = "null";
 	}
 	//Zotero.debug(item.pages);
 
