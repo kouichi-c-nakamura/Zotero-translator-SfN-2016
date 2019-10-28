@@ -105,7 +105,7 @@ function scrape(doc,url){
 	//TODO does not work for mulitiple
 
 	//var m1 = h2color_primary[0].innerHTML.match(/^[.\n\s\d\w\/\-]+(?=\s-\s)/);
-	var m1 = h2color_primary[0].innerHTML.match(/\d+(\.\d+)*[\.\n\s\d\w\/\-]*(?=\s-\s)/);	
+	var m1 = h2color_primary[0].innerHTML.match(/\d+(\.\d+)*[\.\n\s\d\w\/\-]*(?=\s-\s)/);
 	if (m1 != null ) { // null or array
 	    item.pages = m1[0].replace(/\s|\n/g,"");
 	}
@@ -169,6 +169,23 @@ function scrape(doc,url){
 
 	Zotero.debug(item.creators);
 
+	// place
+
+if (url.match(/pp8\/#!\/4071/)) {
+	item.place = "San Diego, CA";
+}
+
+if (url.match(/pp8\/#!\/4376/)) {
+	item.place = "Washington, DC";
+}
+
+if (url.match(/pp8\/#!\/4649/)) {
+	item.place = "San Diego, CA";
+}
+
+if (url.match(/pp8\/#!\/7883/)) {
+	item.place = "Chicago, IL";
+}
 
 	// date
 	var spandate = ZU.xpath(doc,'//span[@class="session-date"]');
