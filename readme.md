@@ -6,9 +6,9 @@
 
 This translator works for Society for Neuroscience Abstracts from 2016 onwards.
 
-[https://abstractsonline.com/pp8/#!/7883](https://abstractsonline.com/pp8/#!/7883) (year 2019)
+[https://www.abstractsonline.com/pp8/#!/7883](https://www.abstractsonline.com/pp8/#!/7883) (year 2019)
 
-[https://abstractsonline.com/pp8/#!/4649](https://abstractsonline.com/pp8/#!/4649) (year 2018)
+[https://www.abstractsonline.com/pp8/#!/4649](https://www.abstractsonline.com/pp8/#!/4649) (year 2018)
 
 [https://www.abstractsonline.com/pp8/#!/4376](https://www.abstractsonline.com/pp8/#!/4376) (year 2017)
 
