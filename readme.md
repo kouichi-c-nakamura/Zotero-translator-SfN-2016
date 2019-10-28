@@ -19,6 +19,13 @@ This translator works for Society for Neuroscience Abstracts from 2016 onwards.
 Although I have made [a Pull Request](https://github.com/zotero/translators/pull/1427) for [Zotero translators](https://github.com/zotero/translators), it's stuck and has not been added to Zotero. I decided to create a separate repo on its own.
 
 
+## Example
+
+Using [CSL_JNS_DOI style](https://github.com/kouichi-c-nakamura/CSL_JNS_DOI), an abstract item imported in Zotero looks like
+
+> Nakamura KC, Micklem B, Berry N, Spagnol G, Sharott A, Magill PJ (2019) CHemoarchitectonic Atlas of the Mouse thalamus as a BNDU opEn Resource (CHAMBER): A publicly-accessible online database of protein expression in mouse brain. In: Society for Neuroscience Abstract, pp 089.01/DP14/BB1. Chicago, IL., https://www.abstractsonline.com/pp8/index.html#!/7883/presentation/64250
+
+Note that `pp` needs to be removed manually with this style (see below).
 
 ## Installation 
 
