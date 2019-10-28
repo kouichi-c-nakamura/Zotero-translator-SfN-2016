@@ -27,10 +27,14 @@ Although I have made [a Pull Request](https://github.com/zotero/translators/pull
 3. Download `Society for Neuroscience Abstract 2016.js` and place it in the `translators` folder.
 4. Restart your Zotero and web browser.
 
-## Note
+## Tips
 
 - If the abstract page is not detected for the translator, try reloading the page a few times and usually it works. 
 
+## Issues
+
+- We can argue whether an abstract in SfN conference should be treated as "Journal Article" or "Conference Paper". The latter makes more sense, so I chouse it. Yet, when you want to cite those abstracts in your paper, Journal Article format might work better.
+- As identifiers, the presentation ID eg. 089.01 and place ID eg. DP1/BB1 are both important, but where should we keep them? I chose Pages, but this results in `pp 089.01/DP1/BB1` in citation, so not ideal (you need to manually remove `pp`). 
 
 ## Developer
 
